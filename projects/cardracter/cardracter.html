@@ -14,18 +14,19 @@
 	<main class="project-page">
 		<section class="project-hero" aria-labelledby="project-title">
 			<div class="hero-copy">
-				<p class="eyebrow">CASE STUDY / REPLACE THIS LABEL</p>
-				<h2 id="project-title">Project title goes here</h2>
-				<p class="hero-description">Introduce the project in two or three sentences. Explain what it does, who it is for, and the problem it solves.</p>
+				<p class="eyebrow">THE CHARACTER CARD CREATION APP</p>
+				<h2 id="project-title">CardRacter</h2>
+				<p class="hero-description">CardRacter is a mobile app with a version in Flutter and in Kotlin with JetPack Compose that allows users to create, store and share custom cards for all their characters.</p>
 				<div class="project-actions">
-					<a class="btn-primary" href="https://github.com/" target="_blank" rel="noopener">View on GitHub <span aria-hidden="true">↗</span></a>
+					<a class="btn-primary" href="https://github.com/Hatedero/cardracter_flutter" target="_blank" rel="noopener">View on the Flutter versio on GitHub <span aria-hidden="true">↗</span></a>
+					<a class="btn-primary" href="https://github.com/Hatedero/CardRacter" target="_blank" rel="noopener">View on the Kotlin versio on GitHub <span aria-hidden="true">↗</span></a>
 					<a class="btn-secondary" href="#video">Watch demo <span aria-hidden="true">↓</span></a>
 				</div>
 			</div>
 			<dl class="project-facts">
 				<div><dt>Status</dt><dd>In progress</dd></div>
 				<div><dt>Role</dt><dd>Developer</dd></div>
-				<div><dt>Built with</dt><dd>HTML · CSS · JavaScript</dd></div>
+				<div><dt>Built with</dt><dd>Kotlin - JetPackCompose | Flutter</dd></div>
 			</dl>
 		</section>
 
@@ -33,20 +34,21 @@
 			<div class="section-heading">
 				<p class="eyebrow">01 / VISUALS</p>
 				<h2 id="gallery-title">A look inside the project</h2>
-				<p>Use this gallery for screenshots, concept art, diagrams, or any visual details that help tell the story.</p>
+				<p>The UI was made ussing Figma to allow ensure a better conception and userfriendlyness</p>
+				<a class="btn-primary" href="https://www.figma.com/design/69iKL9lwlrZWavBtvvMNbY/CardRacter?node-id=23-82&t=Ahj8Jyz1anvZrWdQ-1" target="_blank" rel="noopener">View the Figma<span aria-hidden="true">↗</span></a>
 			</div>
 			<div class="project-gallery">
 				<figure class="gallery-feature">
-					<img src="../../assets/sprout.png" alt="Replace with the project's main screenshot">
-					<figcaption><strong>01</strong> Main project view</figcaption>
+					<img src="" alt="Replace with the project's main screenshot">
+					<figcaption><strong>01</strong> Card list view</figcaption>
 				</figure>
 				<figure>
-					<img src="../../assets/celesteSpeedRun.png" alt="Replace with a secondary project screenshot">
-					<figcaption><strong>02</strong> A closer look</figcaption>
+					<img src="" alt="Replace with a secondary project screenshot">
+					<figcaption><strong>02</strong> Close look at a card</figcaption>
 				</figure>
 				<figure>
-					<img src="../../assets/8DComplete.png" alt="Replace with a detail or process image">
-					<figcaption><strong>03</strong> Detail and process</figcaption>
+					<img src="" alt="Replace with a detail or process image">
+					<figcaption><strong>03</strong> Our database for this project</figcaption>
 				</figure>
 			</div>
 		</section>
@@ -54,18 +56,23 @@
 		<section class="project-section deep-dive" aria-labelledby="deep-dive-title">
 			<div class="section-heading">
 				<p class="eyebrow">02 / DEEP DIVE</p>
-				<h2 id="deep-dive-title">Explain the decisions behind it</h2>
+				<h2 id="deep-dive-title">The technical difficulties we met along the way</h2>
 			</div>
 			<div class="dive-grid">
 				<article class="dive-card">
-					<span class="dive-number">A</span>
-					<h3>Specific topic or feature</h3>
-					<p>Describe an interesting technical choice, feature, or challenge. Explain the context, your approach, and what you learned.</p>
+					<span class="dive-number">Data-base</span>
+					<h3>What implementing a complex data-base in a mobile app taught us?</h3>
+					<p>At the start of the project me and my team mate wanted a data base that would match our ambitions by making it very flexible and futur proof for any further devellopement</p>
+					<p>However having data classes inheriting from a common abstract data class act proved difficult as the right tools to create those abstract data classes and differentiate between the sub-classes didn't exist in Kotlin</p>
+					<p>The subsequent very complex implentation made any further developpement much more complicated as it required changing lots of complex and compact code while adding a lot of constraints on how to operate it</p>
+					<p>This mistake taught me and my class mate important lessons about addapting our ambitions not only to our current abilities but also to the platform we were developing on.</p>
+					<p>This is why when making the FLutter version of our app we implemented a simplified version of our database that lost some felxibility but became much eassier to implement and to interact with.</p>
 				</article>
 				<article class="dive-card">
-					<span class="dive-number">B</span>
-					<h3>How the solution works</h3>
-					<p>Use this section for architecture notes, a design explanation, or a detailed caption for one of the images above.</p>
+					<span class="dive-number">User accounts</span>
+					<h3>How we implemented user registration, loggin and data usage</h3>
+					<p>As CardRacter was made with the goal of enabling it's users to create, save and share cards, it was very important for the app to have a distant data-base and accounts to let our usesrs save their creation in a secure manner</p>
+					<p>To this end we implemened an account creation system </p>
 				</article>
 			</div>
 		</section>
@@ -89,6 +96,7 @@
 				<p class="eyebrow">04 / EXPLORE</p>
 				<h2 id="links-title">Keep going</h2>
 				<p>Give visitors a clear next step: browse the code, try the live build, or read more about the project.</p>
+				<p>add</p>
 			</div>
 			<div class="link-list">
 				<a class="btn-large" href="https://github.com/" target="_blank" rel="noopener">GitHub repository <span aria-hidden="true">↗</span></a>
