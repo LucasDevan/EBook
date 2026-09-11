@@ -20,6 +20,114 @@ body {
         line-height: 1.6;
 }
 
+.test-panel {
+    margin-top: 32px;
+    padding: 24px;
+    background: var(--card-background-color);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+}
+
+.input-grid {
+    display: grid;
+    gap: 18px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-bottom: 18px;
+}
+
+.input-grid label {
+    color: var(--muted-text-color);
+    display: flex;
+    flex-direction: column;
+    font: bold 0.72rem Arial, sans-serif;
+    gap: 8px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.input-grid input {
+    background: var(--background-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    color: var(--text-color);
+    padding: 10px 12px;
+}
+
+.test-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 18px 0 0;
+}
+
+#test-result {
+    background: rgba(22, 103, 138, 0.12);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    margin-top: 18px;
+    padding: 16px;
+}
+
+.solver-output {
+    display: grid;
+    gap: 20px;
+    margin-top: 24px;
+}
+
+.solver-section {
+    background: rgba(1, 4, 17, 0.38);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.solver-section h3 {
+    margin: 0 0 16px;
+}
+
+.board-grid {
+    display: grid;
+    gap: 6px;
+    margin-top: 16px;
+    overflow-x: auto;
+}
+
+.board-cell {
+    align-items: center;
+    background: rgba(226, 232, 240, 0.04);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    color: var(--muted-text-color);
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    min-height: 42px;
+    min-width: 42px;
+}
+
+.board-cell.filled {
+    background: rgba(98, 214, 199, 0.18);
+    border-color: rgba(98, 214, 199, 0.6);
+    color: var(--text-color);
+}
+
+.solution-list {
+    background: var(--extremums-background-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    color: var(--text-color);
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    max-height: 260px;
+    overflow: auto;
+    padding: 16px;
+    white-space: pre-wrap;
+}
+
+.hidden {
+    display: none !important;
+}
+
 header {
     background: var(--extremums-background-color);
     padding: 20px;
