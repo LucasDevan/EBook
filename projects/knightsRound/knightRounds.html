@@ -76,16 +76,45 @@
 			</div>
 			<div class="video-placeholder" role="img" aria-label="Placeholder for a project demo video">
 				<video width=500 controls>
-					<source src="../../assets/projects/knightRound/knight_round.mov" type="video/mov">
-                    <source src="../../assets/projects/knightRound/knight_round.mp4" type="video/mp4">
+					<source src="../../assets/Projects/knightRound/knight_round.mov" type="video/mov">
+                    <source src="../../assets/Projects/knightRound/knight_round.mp4" type="video/mp4">
                     You're browser doesn't support videos
                 </video>			
             </div>
 		</section>
 
+		<section id="test" class="project-section test-section" aria-labelledby="test-title">
+			<div class="section-heading">
+				<p class="eyebrow">04 / TEST</p>
+				<h2 id="test-title">Test it yourself !</h2>
+			</div>
+			<div class="test-panel">
+				<form id="knight-round-form">
+					<div class="input-grid">
+						<label>
+							<span>Board size</span>
+							<input type="number" id="board-size" min="1" max="31" value="5" required>
+						</label>
+						<label>
+							<span>Start column</span>
+							<input type="number" id="start-column" min="0" value="0" required>
+						</label>
+						<label>
+							<span>Start row</span>
+							<input type="number" id="start-row" min="0" value="0" required>
+						</label>
+					</div>
+					<button type="submit" class="btn-primary">Solve knight tour</button>
+				</form>
+				<div id="test-result" aria-live="polite">
+					Enter a board size and starting position to generate a solution.
+				</div>
+			</div>
+		</section>
+
 		<section class="project-links" aria-labelledby="links-title">
 			<div>
-				<p class="eyebrow">04 / EXPLORE</p>
+				<p class="eyebrow">05 / EXPLORE</p>
 				<h2 id="links-title">Keep going</h2>
 				<p>Give visitors a clear next step: browse the code, try the live build, or read more about the project.</p>
 			</div>
@@ -96,5 +125,7 @@
 	</main>
 </body>
 <footer id="site-subfooter"></footer>
+<script src="https://cdn.jsdelivr.net/pyodide/v0.26.4/full/pyodide.js"></script>
+<script src="knightRoundScript.js"></script>
 <script src="../../js/scripts.js"></script>
 </html>
